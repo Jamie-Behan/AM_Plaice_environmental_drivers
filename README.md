@@ -24,8 +24,8 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
 - "Plaice_distribution_cleanup.R" - .R file used to run exploratory distribution analyses as described in "Plaice_Ecosystem_Drivers.PDF"
         
 - "Plaice_growth_GAMs.R" - .R file used to run exploratory growth analyses as described in "Plaice_Ecosystem_Drivers.PDF"
-        
-  **4. "Environmental Data" folder containing Environmental data used in analyses:**
+
+**4. "Environmental Data" folder containing Environmental data used in analyses:**
    
 - "fall_env.df.csv" - Fall environmental data"
 
