@@ -25,13 +25,13 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
         
 - "Plaice_growth_GAMs.R" - .R file used to run exploratory growth analyses as described in "Plaice_Ecosystem_Drivers.PDF"
         
-        Any further questions can be directed to Jamie Behan: jbehan@gmri.org
-        
-   **3. "Environmental Data" folder containing Environmental data used in analyses:**
+  **4. "Environmental Data" folder containing Environmental data used in analyses:**
    
 - "fall_env.df.csv" - Fall environmental data"
 
 - "spring_env.df.csv" - Spring environmental data"
 
 - original data sources for all data used are discussed in the technical report, "Plaice_Ecosystem_Drivers.PDF".
+
+      Any further questions can be directed to Jamie Behan: jbehan@gmri.org
    
