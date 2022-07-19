@@ -27,9 +27,9 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
 
 **4. "Environmental Data" folder containing Environmental data used in analyses:**
    
-- "fall_env.df.csv" - Fall environmental data"
+- "fall_env.df.csv" - Fall environmental data
 
-- "spring_env.df.csv" - Spring environmental data"
+- "spring_env.df.csv" - Spring environmental data
 
 - original data sources for all data used are discussed in the technical report, "Plaice_Ecosystem_Drivers.PDF".
 
