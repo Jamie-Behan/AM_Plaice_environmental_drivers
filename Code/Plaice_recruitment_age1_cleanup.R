@@ -296,28 +296,28 @@ GAM_CURVE_FUN<- function(gam_name,data_column,data_Year,x_lab,y_lab,select1,titl
 }
 ###### EXPLORATORY GAMs (March/October (year-1) - February/September (year))#######
 ##### Age 1 recruits (Fall tow) vs. potential environmental influences###########
-FL_numtow<-gam((RSSB) ~ s(GSI6, k=4)+s(GSI12, k=4)+s(NAO6, k=4)+s(NAO12, k=4)+s(AMO6, k=4)+s(AMO12, k=4)+s(NAO12_lag2, k=4)+s(month6_bt_anomaly, k=4)+s(Annual_os_bt_anomaly, k=4)+s(month4_sst_anomaly, k=4), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
+FL_numtow<-gam((RSSB) ~ s(GSI12, k=4)+s(GSI12, k=4)+s(NAO6, k=4)+s(NAO12, k=4)+s(AMO6, k=4)+s(AMO12, k=4)+s(NAO12_lag2, k=4)+s(month6_bt_anomaly, k=4)+s(Annual_os_bt_anomaly, k=4)+s(month4_sst_anomaly, k=4), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
 summary(FL_numtow) # Find significant variables based on p-value
 FL_numtow$aic
 
 #full model, duplicates removed:
-FL_numtow<-gam((RSSB) ~ s(GSI6, k=5)+s(NAO12, k=5)+s(NAO12_lag2, k=5)+s(AMO6, k=5)+s(Annual_os_bt_anomaly, k=5)+s(month4_sst_anomaly, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
+FL_numtow<-gam((RSSB) ~ s(GSI12, k=5)+s(NAO12, k=5)+s(NAO12_lag2, k=5)+s(AMO6, k=5)+s(Annual_os_bt_anomaly, k=5)+s(month4_sst_anomaly, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
 summary(FL_numtow) # Find significant variables based on p-value
 FL_numtow$aic
 
-FL_numtow<-gam((RSSB) ~ s(GSI6, k=5)+s(NAO12_lag2, k=5)+s(AMO6, k=5)+s(Annual_os_bt_anomaly, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
+FL_numtow<-gam((RSSB) ~ s(GSI12, k=5)+s(NAO12_lag2, k=5)+s(AMO6, k=5)+s(Annual_os_bt_anomaly, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
 summary(FL_numtow) # Find significant variables based on p-value
 FL_numtow$aic
 
 #reduced model:
-FL_numtow<-gam((RSSB) ~ s(GSI6, k=5)+s(AMO6, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
+FL_numtow<-gam((RSSB) ~ s(GSI12, k=5)+s(AMO6, k=5), family=tw(),method = "REML",data=AGE1ft.df) # Build GAM with all possible variables
 summary(FL_numtow) # Find significant variables based on p-value
 FL_numtow$aic
 
 
 ###Plot GAM
 layout(matrix(1:2, ncol=1, byrow=FALSE))
-GAM_CURVE_FUN(FL_numtow,AGE1ft.df$GSI6,AGE1ft.df$Year,x_lab="Gulf Stream Index (Deg Lat)",y_lab="PE on R/SSB",select1=1,title="Environmental Effects on Fall Mean R/SSB",position="bottomleft")
+GAM_CURVE_FUN(FL_numtow,AGE1ft.df$GSI12,AGE1ft.df$Year,x_lab="Gulf Stream Index (Deg Lat)",y_lab="PE on R/SSB",select1=1,title="Environmental Effects on Fall Mean R/SSB",position="bottomleft")
 GAM_CURVE_FUN(FL_numtow,AGE1ft.df$AMO6,AGE1ft.df$Year,x_lab="Atlantic Multidecadal Oscillation (Δ SST °C)",y_lab="PE on R/SSB",select1=2,title=NULL,position="bottomleft")
 
 par(mar=c(4,4,1,1))
@@ -334,7 +334,7 @@ SP_numtow<-gam((RSSB) ~ s(GSI6, k=5)+s(AMO12, k=5)+s(NAO12_lag2, k=5)+s(month6_b
 summary(SP_numtow) # Find significant variables based on p-value
 SP_numtow$aic
 #reduced model:
-SP_numtow<-gam((RSSB) ~ s(AMO12, k=5), family=tw(),method = "REML",data=AGE1st.df) # Build GAM with all possible variables
+SP_numtow<-gam((RSSB) ~ s(AMO12, k=5), family=tw(),method = "REML",data=AGE1st.df)
 summary(SP_numtow) # Find significant variables based on p-value
 SP_numtow$aic
 
