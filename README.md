@@ -15,9 +15,7 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
   
   **1. "Plaice_Ecosystem_Drivers.PDF"** - A technical report detailing a short introduction, as well as detailed methods and results from these exploratory analyses
   
-  **2. "Plaice_Ecosystem_Drivers.html"** - An RMarkdown document containing a slightly more summarized version of the methods and results compared to the technical report.
-  
-  **3. "Code" folder containing R code used to run the analyses:**
+  **2. "Code" folder containing R code used to run the analyses:**
   
 - "Plaice_recruitment_age1_cleanup.R" - .R file used to run exploratory recruitment analyses as described in "Plaice_Ecosystem_Drivers.PDF"
         
@@ -25,7 +23,7 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
         
 - "Plaice_growth_GAMs.R" - .R file used to run exploratory growth analyses as described in "Plaice_Ecosystem_Drivers.PDF"
 
-**4. "Environmental Data" folder containing Environmental data used in analyses:**
+**3. "Environmental Data" folder containing Environmental data used in analyses:**
    
 - "fall_env.df.csv" - Fall environmental data
 
