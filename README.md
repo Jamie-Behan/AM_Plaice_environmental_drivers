@@ -1,10 +1,10 @@
-# AM_Plaice_environmental_drivers
+# Environmental Drivers of American Plaice Stock Dynamics
 
 ## This repository houses the data used to build and run the exploratory GAM analyses that were used to identify potential ecosystem drivers on American plaice population dynamics.
 
 ### From "Plaice_Ecosystem_Drivers.PDF":
 
-#### **1.	BACKGROUND**
+### **1.	BACKGROUND**
 
 Over the last 40 years, the waters of the northwest Atlantic have warmed at a rate more than three times the global average and the recent decadal warming in this region is among the fastest in the world (Pershing et al. 2015, 2018, NEFSC 2022b). Fish population dynamics are strongly influenced by these changing ocean conditions and Northeast groundfish have exhibited sensitivity to changing thermal conditions with associated changes in productivity and distribution (Brodziak and O’Brien 2005, Nye et al. 2009, Hare et al. 2016, Pershing et al. 2021). American plaice is a cold-water demersal flatfish species native to the North Atlantic and Arctic oceans (NEFMC 1985). Changes in ocean conditions have been documented to affect key life history processes, including recruitment, distribution, and growth of American plaice (see detailed description in ToR 1 section of WG report).
 
@@ -13,23 +13,25 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
   
 ### **Included in this Repository is the following:**
   
-  **1. "Plaice_Ecosystem_Drivers.PDF"** - A technical report detailing a short introduction, as well as detailed methods and results from these exploratory analyses
+####  **1. "Plaice_Ecosystem_Drivers.PDF"** 
+- A technical report detailing a short introduction, as well as detailed methods and results from these exploratory analyses
   
-  **2. "Code" folder containing R code used to run the analyses:**
+####  **2. "Code" folder containing R code used to run the analyses as described in "Plaice_Ecosystem_Drivers.PDF":**
   
-- "Plaice_recruitment_age1_cleanup.R" - .R file used to run exploratory recruitment analyses as described in "Plaice_Ecosystem_Drivers.PDF"
-        
-- "Plaice_distribution_cleanup.R" - .R file used to run exploratory distribution analyses as described in "Plaice_Ecosystem_Drivers.PDF"
-        
-- "Plaice_growth_GAMs.R" - .R file used to run exploratory growth analyses as described in "Plaice_Ecosystem_Drivers.PDF"
+| File | Description |
+| ----------- | ----------- |
+|Plaice_recruitment_age1_cleanup.R | .R file used to run exploratory recruitment analyses|
+|Plaice_distribution_cleanup.R | .R file used to run exploratory distribution analyses|
+|Plaice_growth_GAMs.R| .R file used to run exploratory growth analyses|
 
-**3. "Environmental Data" folder containing Environmental data used in analyses:**
+#### **3. "Environmental Data" folder containing environmental data:**
    
-- "fall_env.df.csv" - Fall environmental data
+| File | Description |
+| ----------- | ----------- |
+|fall_env.df.csv| Fall environmental data used in analyses|
+|spring_env.df.csv| Spring environmental data used in analyses|
 
-- "spring_env.df.csv" - Spring environmental data
-
-- original data sources for all data used are discussed in the technical report, "Plaice_Ecosystem_Drivers.PDF".
-
+      Original data sources for all data used are discussed in the technical report, "Plaice_Ecosystem_Drivers.PDF".
+      
       Any further questions can be directed to Jamie Behan: jbehan@gmri.org
    
