@@ -27,7 +27,7 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
 #### **3. "Environmental Data" folder containing environmental data:**
    
 | File | Description |
-| ----------- | ----------- |
+| ----------- | -----------|
 |fall_env.df.csv| Fall environmental data used in analyses|
 |spring_env.df.csv| Spring environmental data used in analyses|
 
