@@ -33,5 +33,5 @@ The goal of this work was to conduct exploratory modeling to examine the relatio
 
       Original data sources for all data used are discussed in the technical report, "Plaice_Ecosystem_Drivers.PDF".
       
-      Any further questions can be directed to Jamie Behan: jbehan@gmri.org
+      Any further questions can be directed to Jamie Behan: jamie.behan@maine.edu
    
